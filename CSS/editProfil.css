@@ -1,0 +1,234 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	background: url(../Gambar/background2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.menu {
+	height: 100%;
+	clear: both;
+	padding: 0px 0px 0px 15px;
+}
+
+.menu ul {
+	border: none;
+	list-style: none;
+}
+
+.menu ul li {
+	display: inline-block;
+}
+
+.menu ul li a {
+	float: left;
+	color: white;
+	padding: 15px;
+	margin: 0;
+	font-size: 15px;
+	background: none;
+	text-decoration: none;
+	font-family: cursive;
+	font-weight: bold;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.menu ul li a:hover {
+	border-radius: 5px;
+	transition: 0.5s;
+	background: rgba(128, 128, 128, 0.5);
+}
+
+.menu a.aktif {
+	background-color: rgba(6, 58, 112);
+	border-radius: 5px;
+}
+
+.user {
+	color: white;
+	padding: 15px;
+	margin-right: 10px;
+	font-size: 15px;
+	background: none;
+	font-family: cursive;
+	font-weight: bold;
+	float: right;
+	box-sizing: border-box;
+}
+
+.container {
+	font-family: sans-serif;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.container-left {
+	height: 570px;
+	width: 15%;
+	float: left;
+	background: rgba(36, 97, 117);
+}
+
+.container-left ul {
+	border: none;
+	list-style: none;
+	width: 100%;
+}
+
+.container-left ul li {
+	display: inline-block;
+	transform: translate(-21.5%,0%);
+	width: 100%;
+	border-bottom: 1px solid white;
+}
+
+.container-left a:hover {
+	color: white;
+}
+
+.container-left a.aktif {
+	color: white;
+}
+
+.container-left img {
+	width: 20px;
+	margin-right: 5px;
+	transform: translate(0%, 15%);
+}
+
+.container-left p {
+	font-family: cursive;
+	margin-left: 20px;
+}
+
+.container-left a{
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+}
+
+.container-right {
+	float: right;
+	height: 570px;
+	width: 85%;
+	background: white;
+	font-family: cursive;
+}
+
+.container-right h1 {
+	margin: 10px 0 0 20px;
+	color: rgba(30, 123, 123);
+}
+
+.kotak {
+	margin: 15px 0 0 20px;
+}
+
+.kotak .up {
+	background: rgba(132, 255, 255);
+}
+
+.kotak .down {
+	background: rgba(91, 215, 215, 0.8);
+}
+
+.kotak td {
+	width: 180px;
+	padding: 10px;
+}
+
+.kotak td.left {
+	width: 120px;
+}
+
+.kotak td.right {
+	width: 180px;
+}
+
+.kotak input {
+
+}
+
+.form {
+	margin: 15px 0 0 20px;
+}
+
+.form td {
+	padding-top: 5px;
+	width: 200px;
+}
+
+.form input[type="text"], input[type="password"] {
+	background: rgba(179, 179, 179, 0.5);
+	border: 1px solid rgba(153, 153, 153);
+	border-radius: 3px;
+	width: 180px;
+	height: 25px;
+	font-family: cursive;
+	transition: 0.25s;
+}
+
+.form input[type="text"]:focus, input[type="password"]:focus {
+	box-shadow: 0 0 4px 1px rgba(77, 184, 255);
+}
+
+.form input[type="submit"] {
+	height: 30px;
+	font-family: cursive;
+	background: rgba(51, 153, 255);
+	border-radius: 5px;
+	transition: 0.25s;
+}
+
+.form input[type="submit"]:hover {
+	background: rgba(51, 225, 255);
+	transition: 0.25s;
+}
+
+.form .inputPassword {
+	padding-top: 50px;
+}
+
+.form .error {
+	color: red;
+}
+
+.noticeProfile {
+	background: rgba(0, 204, 68);
+	width: 60%;
+	border: 2px solid rgba(0, 128, 43);
+	margin: 15px 0 0 20px;
+	color: white;
+	border-radius: 10px;
+}
+
+.noticePassword {
+	background: rgba(0, 204, 68);
+	width: 60%;
+	border: 2px solid rgba(0, 128, 43);
+	margin: 15px 0 0 20px;
+	color: white;
+	border-radius: 10px;
+}
+
+h4 {
+	padding-left: 30px; 
+}
+
+.footer {
+	background: white;
+	text-align: center;
+	height: 250px;
+	width: 100%;
+	color: white;
+}
+
+.footer h4 {
+	padding-top: 5px;
+	margin-top: 10px;
+}

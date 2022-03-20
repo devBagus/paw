@@ -1,0 +1,318 @@
+body  /*untuk mengatur di bagian body*/
+	{
+	background-size: 100%; /*mengatur ukuran baground 100%*/
+	font-family: VErdana, gen /*mengatur jenis font di dalam body*/
+	Arial, Helvetica, sans-se;
+	background: url(foto/hometeacher.jpg);
+	/*mengatur backgroud menggunakan gambar(di bagian body)*/
+	margin-left:auto; /*mengatur margin kiri.......*/
+	margin-right:auto; /*mengatur margin kanan........*/
+	/*background: url(Gambar/background.jpg);*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	}
+/*=====================================Mengatur Bagian Header===================================================*/
+div.header 
+{ 
+	width: 1320px; /*mengatur lebar header*/
+	text-align:center;
+	color: BLACK;
+	margin-left:auto; /*mengatur margin kiri.......*/
+	margin-right:auto; /*mengatur margin kanan........*/
+	background-color:#48D1CC; /*mengatur backgroud(di bagian header)*/
+	background-size:100% 100%; /*mengatur ukuran backgroud di header*/
+	height:80px; /*mengatur tinggi header*/
+	padding:1px; /*mengatur padding header.........*/
+	border-radius:3px; /*mengatur bentuk border header*/
+	font-family:Cooper Black;
+	 /*jenis font header*/
+	font-size:25px; /*mengatur ukuran font di header h*/
+}
+/*=====================================Mengatur Bagian Menu===================================================*/
+div.menu 
+{
+	margin-left:auto; /*mengatur margin kiri.......*/
+	margin-right:auto; /*mengatur margin kanan........*/
+	background-color: #40E0D0;
+	width: 1320px; /*mengatur lebar menu*/
+	height:50px; /*mengatur tinggi menu*/
+	border-radius:3px; /*mengatur bentuk border(radius) menu*/
+}
+div.menu a /*untuk mengatur tampilan di bagian menu a*/
+{
+    float: left; /*mengatur posisi menu rata kiri*/
+    display: block; /*............*/
+    color: #e8e3dd; /*mengatur warna font pada menu*/
+    text-align: center; /*mengatur text rata tengah*/
+	font-size:20px; /*mengatur ukuran text di menu*/
+    padding: 4px 6px; /*mengatur padding menu*/
+	font-family:Arial; /*mengatur jenis font text pada menu*/
+    text-decoration: none; /*.............*/
+}
+div.menu a:hover /*untuk memberikan efek warna ketika pointer diarahkan pada sebuah tulisan*/
+{
+    background: #ddd;
+    color: black;
+	height:41px;
+	border-radius:3px;
+}
+div.g /*mengatur div g*/
+{
+    width: 1315px;
+    height: 45px;
+    background-color:  #1e0f01e3;
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+	color:white;
+	text-align:center;
+	border-radius:4px;
+	font-family:Cooper Black;
+}
+/*========================mengatur sider bar kiri=====================================*/
+div.contentall /*mengatur section content dasar*/
+{
+	padding: 1px;
+	margin-top: 5px;
+	margin-left: 1px;
+	margin-right: 1px;
+	border-radius:4px;
+	width: 1100px;
+	float: both;
+	margin-bottom: 45px;
+	height:860px;
+}
+div.sidebar 
+{    
+	padding-top: 0px;
+	margin-top:5px;
+	margin-left:15px;
+	background-color: #a49270;
+	border:1px solid white;
+	border-radius:4px;
+	float: left;
+	width: 210px;
+	height:308px;
+	color:#e6e0dc;
+}
+ul.circle{/*mengatur memberi type tombol unordered list berupa circle*/
+	list-style-type:circle;
+}
+div.sidebox /*mengatur sidebox yang merupakan bagian dari side bar*/
+{
+	padding-top: 1px;
+	margin-top:5px;
+	border-radius:3px;
+	border:1px solid white;
+	background-color: #bf8825;
+	float: both;
+	margin-right:5px;
+	margin-left:10px;
+	width: 175px;
+	height:50px;
+	color:#ecebe0;
+	text-align:center;
+	font-size:15px;
+}
+
+/*=====================================Mengatur Bagian Content===================================================*/
+div.contentme /*mengatur section content dasar*/
+{
+	padding: 10px;
+	margin-top: 15px;
+	margin-left: 15px;
+	background-color:#AFEEEE;
+	border-radius:4px;
+	width: 1292px;
+	float: both;
+	margin-bottom: 45px;
+	height:850px;
+}
+
+div.content /*mengatur section kontent di dalam kontenme*/
+{
+	padding: 20px;
+	margin-top: 25px;
+	margin-left: 35px;
+	margin-right: 155px;
+	background-color:#fdf9f7f7;
+	border:1px solid black;
+	border-radius:4px;
+	width: 1180px;
+	float: left;
+	margin-bottom: 45px;
+	height:750px;
+}
+
+div .content h1, h3, p {
+	text-align: center;
+	font-family:Cooper Black;
+}
+div .a {
+	text-align: center;
+}
+div .a a:hover {
+	text-align: center;
+	background: red;/*bacground untuk hover*/
+    color: black;/*warna tulisan*/
+	height:25px;/*tinggi menu a*/
+	width: 15px;
+}
+.table1{
+	float: both;
+	margin-right:auto;
+	margin-left:auto;
+	background: grey;
+}
+.table1 td{
+	text-align: center;
+}
+.table1 a:hover /*untuk memberikan efek warna ketika pointer diarahkan pada sebuah tulisan*/
+{
+    background: red;/*bacground untuk hover*/
+    color: black;/*warna tulisan*/
+	height:25px;/*tinggi menu a*/
+	width: 15px;
+}
+.h2/*mengatur heading di dalam konten*/
+{
+	padding-top: 15px;
+	margin-top:10px;
+	border-radius:3px;
+	background-color: grey;
+	border:1px solid black;
+	float: both;
+	margin-right:5px;
+	margin-left:5px;
+	width: 450px;
+	height:40px;
+	text-align:center;
+} 
+.h2a /*mengatur heading di dalam konten*/
+{
+	padding-top: 25px;
+	margin-top:35px;
+	border-radius:3px;
+	background-color: grey;
+	border:1px solid black;
+	float: both;
+	margin:auto;
+	width: 300px;
+	height:60px;
+	text-align:center;
+} 
+.p
+{
+	text-align:center;
+	font-family: VErdana, gen, Arial, Helvetica, sans-se;
+}
+div.box
+{
+	padding-top: 25px;
+	margin-top:10px;
+	border-radius:3px;
+	background-color: grey;
+	border:1px solid black;
+	float: both;
+	margin-right:15px;
+	margin-left:15px;
+	width: 700px;
+	height:100px;
+	text-align:center;
+}
+/*=====================================Mengatur Bagian Footer===================================================*/
+div.footer  /*mengatur dan membuat footer*/
+{
+	margin-top: auto;
+	margin-left:100px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #151313;
+	color:white;
+	border-radius:3px;
+	text-align: center;
+	clear: both;
+	height: 180px;
+	width:1210px;
+}
+div.table{ /*membuat tabel dalam footer*/
+    display:table;
+    width:1300px;
+}
+div.kolom{ /*membuat  baris dalam footer*/
+    display:table-row;
+    text-align:left;
+    line-height:20px;
+}
+div.col{ /*membuat kolom dalam footer*/
+    display:table-cell;
+}
+div.col p{ /*mengatur tag p yang ada di dalam class col*/
+    text-align:left;
+	font-size:15px;
+}
+div.footer2 /*mengatur dan membuat footer*/
+{
+	padding: 3px;
+	margin-top: 2px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #151313;
+	color:white;
+	border-radius:3px;
+	text-align: center;
+	font-family:Arial;
+	clear: both;
+	height: 40px;
+	width:1210px;
+}
+
+/*==========================form=======================================*/
+div.contentform /*mengatur section kontent di dalam kontenme*/
+{
+	padding: 20px;
+	margin-top: 25px;
+	margin-left: 35px;
+	margin-right: 35px;
+	background-color:grey;
+	border:1px solid black;
+	border-radius:4px;
+	width: 1200px;
+	float: left;
+	margin-bottom: 45px;
+	height:750px;
+}
+div .contentform fieldset{
+	background-color: #87ceeb;
+	width: 550px;
+	height: 300px;
+	padding-top: 40px;
+	margin: auto;
+	text-align: center;
+}
+div .contentform legend{
+	margin-top: 45px;
+	font-weight: bold;
+	font-size: 25px;
+}
+div .contentform table{
+	padding: 25px;
+}
+div .contentform tr{
+	height: 32px;
+}
+.eror{
+	text-align: right;
+}
+.posisi{
+	width: 350px;
+	text-align: right;
+}
+.lebar{
+	width: 250px;
+}
+.merah{
+	color: red;
+}
+

@@ -1,0 +1,124 @@
+CREATE TABLE all_class(
+id_class char(3) NOT NULL,
+nip char(12) NOT NULL,
+nama_class varchar(30) DEFAULT NULL,
+detail_class varchar(1024) DEFAULT NULL
+);
+
+INSERT INTO all_class (id_class, nip, nama_class, detail_class) VALUES
+	('101', '195709271111', 'Basis Data', 'Masuk pukul 09.00 WIB dengan maksimal keterlambatan 10 menit'),
+	('102', '195811101111', 'Analisa Perancangan Perangkat Lunak', 'Masuk pukul 10.00 WIB dan tidak ada toleransi keterlambatan'),
+	('103', '195709271111', 'Pemrograman Desktop', 'Masuk pukul 09.00 WIB dengan maksimal keterlambatan 10 menit'),
+	('104', '195709271111', 'Penambangan Data', 'Masuk pukul 09.00 WIB dengan maksimal keterlambatan 10 menit'),
+	('105', '196405111111', 'Komputasi Numerik', 'Ruangan di 203 dengan maksimal keterlambatan 10 menit'),
+	('106', '196405111111', 'Pengolahan Citra', 'Ruangan di 203 dengan maksimal keterlambatan 10 menit'),
+	('107', '196307021111', 'Grafika Komputer', 'Maksimal keterlambatan 15 menit'),
+	('108', '196307021111', 'Statistika', 'Maksimal keterlambatan 15 menit'),
+	('109', '195811101111', 'Interaksi Manusia dan Komputer', 'Masuk pukul 10.00 WIB dan tidak ada toleransi keterlambatan'),
+	('110', '195811101111', 'Strategi Algoritma', 'Masuk pukul 10.00 WIB dan tidak ada toleransi keterlambatan');
+
+CREATE TABLE materi (
+id_materi char(3) NOT NULL,
+id_class char(3) NOT NULL,
+nama_materi text,
+detail_materi text
+);
+
+INSERT INTO materi(id_materi,id_class, nama_materi, detail_materi) VALUES
+	(100, 102, 'coba.txt', 'Silahkan dibuka');
+
+
+CREATE TABLE student (
+nim char(12) NOT NULL,
+nama_student varchar(30) DEFAULT NULL,
+alamat_email varchar(30) DEFAULT NULL,
+nomer_hp char(12) DEFAULT NULL,
+password_student varchar(64) NOT NULL
+);
+
+INSERT INTO student(nim,password_student, nama_student,alamat_email, nomer_hp) VALUES
+	(170411100031, SHA2('rini1234',0),'Rini Azlinda',  'rini@gmail.com', 083143099400 ),
+	(170411100045, SHA2('bagus1234',0),'Bagus Fajariyanto','bagus@gmail.com', 082330227050),
+	(170411100051, SHA2('fira1234',0),"Musfirotummamlu'ah", 'musfirotumm@gmail.com', 081330290475),
+	(170411100005, SHA2('yongki1234',0),'Yongki Eka Salfitra', 'yongki@gmail.com', 089703401907),
+	(170411100048, SHA2('fitri1234',0),'Fitri Suwandari', 'fitri@gmail.com', 081256786509 ),
+	(170411100118, SHA2('ayu1234',0),'Nurma Ulfa Yuana', 'ayu@gmail.com', 083190876545 ),
+	(170411100090, SHA2('dani1234',0),'Dani Hartanto', 'dani@gmail.com', 081343088400 ),
+	(170411100034, SHA2('irsad1234',0),'Moh. Irsad', 'irsad@gmail.com', 085678654345 );
+
+CREATE TABLE teacher (
+nip char(12) NOT NULL,
+nama_teacher varchar(40) DEFAULT NULL,
+password_teacher varchar(64) NOT NULL
+) ;
+INSERT INTO teacher(nip, nama_teacher,password_teacher) VALUES
+	(195811101111, "DONI ABDUL FATAH, S.KOM M.KOM", SHA2('doni1234',0)),
+	(195709271111, "MULA'AB, S.Si., M.Kom", SHA2('mulaab1234',0)),
+	(196307021111, "ACH. KHOZAIMI, S.Kom., M.Kom", SHA2('khozaimi1234',0)),
+	(196405111111, "ROSIDA VIVIN NAHARI, S.Kom,.MT", SHA2('rosida1234',0));
+
+CREATE TABLE student_class (
+id_class char(3) NOT NULL,
+nim char(12) NOT NULL
+);
+INSERT INTO student_class(id_class,nim) VALUES
+	(101, 170411100031),
+	(102, 170411100031),
+	(108, 170411100031), 
+
+	(103, 170411100045),
+	(105, 170411100045),
+	(107, 170411100045),
+
+	(102, 170411100051),
+	(104, 170411100051),
+	(106, 170411100051), 
+
+	(101, 170411100005),
+	(107, 170411100005),
+	(110, 170411100005),
+
+	(104, 170411100048),
+	(105, 170411100048),
+	(109, 170411100048), 
+
+	(108, 170411100118),
+	(109, 170411100118),
+	(110, 170411100118),
+
+	(102, 170411100090),
+	(108, 170411100090),
+	(107, 170411100090),
+
+	(101, 170411100034),
+	(103, 170411100034),
+	(106, 170411100034);
+
+ALTER TABLE student
+	ADD PRIMARY KEY (nim);
+
+ALTER TABLE teacher
+	ADD PRIMARY KEY (nip);
+
+ALTER TABLE all_class
+	ADD PRIMARY KEY (id_class),
+	ADD KEY `FK_MEMILIKI` (nip),
+	ADD CONSTRAINT FK_MEMILIKI FOREIGN KEY (nip) REFERENCES teacher (nip);
+
+ALTER TABLE student_class
+ 	ADD PRIMARY KEY (id_class,nim),
+  	ADD KEY FK_STUDENT_CLASS (nim),
+  	ADD KEY FK_STUDENT_CLASS2 (id_class),
+	ADD CONSTRAINT FK_STUDENT_CLASS FOREIGN KEY (nim) REFERENCES student (nim),
+	ADD CONSTRAINT FK_STUDENT_CLASS2 FOREIGN KEY (id_class) REFERENCES all_class (id_class);
+
+ALTER TABLE materi
+	ADD PRIMARY KEY (id_materi),
+	ADD KEY `FK_MENGUPLOUD` (id_class),
+	ADD CONSTRAINT FK_MENGUPLOUD FOREIGN KEY (id_class) REFERENCES all_class (id_class);
+
+
+
+
+	
+

@@ -1,0 +1,119 @@
+body {
+	background-color: #16A086;
+	margin: 0;
+	font-family: Helvetica;
+	color: white;
+}
+
+.container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.table-container {
+	width: 100%;
+}
+
+ .profile {
+	width: 50%;
+}
+
+.title {
+	background-color: #0F6177;
+	color: white;
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 0;
+	border-bottom-right-radius: 5px;
+	margin-bottom: 15px;
+	min-width: 300px;
+	text-align: center;
+	font-size: 25px;
+}
+
+hr {
+	margin: 0;
+	border: solid 1px #0F6177;
+}
+
+.profile img {
+	width: 250px;
+	float: left;
+	margin-right: 15px;
+}
+
+.table-container td {
+	vertical-align: top;
+	padding: 15px;
+}
+
+.skill .content {
+	background-color: white;
+	color: #333333;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.skill ul {
+	margin: 0;
+	list-style: none;
+}
+
+.skill li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #f1f1f1;
+}
+
+.skill .level {
+	background-color: #0F6177;
+	color: white;
+	padding: 5px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.text {
+	margin-top: 20px;
+}
+
+.table {
+	margin-top: 25px;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.table th {
+	background-color: #0B8389;
+	padding: 15px 20px;
+}
+
+.table td {
+	padding: 15px 15px;
+	color: #393939;
+}
+
+.table tr:nth-child(even) {
+	background-color: white;
+}
+
+.table tr:nth-child(odd) {
+	background-color: #dfdfdf;
+}
+
+
+.project .content {
+	color: white;
+	text-align: center;
+	float: left;
+	width: 25%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.project .content img {
+	width: 100%;
+	margin-bottom: 15px;
+}

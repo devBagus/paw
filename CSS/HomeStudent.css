@@ -1,0 +1,177 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	background: url(../Gambar/background2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.menu {
+	height: 100%;
+	clear: both;
+	padding: 0px 0px 0px 15px;
+}
+
+.menu ul {
+	border: none;
+	list-style: none;
+}
+
+.menu ul li {
+	display: inline-block;
+}
+
+.menu ul li a {
+	float: left;
+	color: white;
+	padding: 15px;
+	margin: 0;
+	font-size: 15px;
+	background: none;
+	text-decoration: none;
+	font-family: cursive;
+	font-weight: bold;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.menu ul li a:hover {
+	padding: 17px;
+	border-radius: 5px;
+	transition: 0.5s;
+	background: rgba(128, 128, 128, 0.5);
+}
+
+.menu a.aktif {
+	background-color: rgba(6, 58, 112);
+	border-radius: 5px;
+}
+
+.user {
+	color: white;
+	padding: 15px;
+	margin-right: 10px;
+	font-size: 15px;
+	background: none;
+	font-family: cursive;
+	font-weight: bold;
+	float: right;
+	box-sizing: border-box;
+}
+
+.container {
+	font-family: sans-serif;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.container-top {
+	color: white;
+	text-align: center;
+	width: 100%;
+	top: 30%;
+	left: 50%;
+}
+
+.container-top img {
+	width: 450px;
+	margin: 20px;
+}
+/**atas, kanan, bawah, kiri **/
+
+.container-mid {
+	/**background: linear-gradient(to right, #0066cc 60%, #0040ff 100%);**/
+	background: rgba(0, 128, 128, 0.5);
+	padding: 10px 0 30px 0;
+	color: white;
+	margin: 0;
+}
+
+table {
+	width: 60%;
+	margin-left: 20%;
+}
+
+table td, th{
+	padding: 10px;
+}
+
+th {
+	border: 1px solid white;
+}
+
+h2, h4 {
+	text-align: center;
+}
+
+table .up {
+	background: rgba(59, 79, 145);
+}
+
+table .down {
+	background: rgba(44, 59, 109);
+}
+
+.no {
+	text-align: center;
+}
+
+.detail {
+	clear: both;
+	padding: 10px;
+	color: white;
+	background: none;
+	font-family: cursive;
+	text-align: center;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.detail:hover {
+	background: rgba(0, 255, 0);
+}
+
+.del {
+	padding: 10px;
+	color: white;
+	background: rgba(255, 50, 50);
+	font-family: sans-serif;
+	text-align: center;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.del:hover {
+	background: rgba(255, 0, 0);
+}
+
+.back {
+	padding: 10px;
+	color: white;
+	background: rgba(0, 89, 179);
+	font-family: sans-serif;
+	text-align: center;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.back:hover {
+	background: rgba(0, 128, 255);
+}
+
+.footer {
+	text-align: center;
+	height: 80px;
+	width: 100%;
+	background: #1a1a1a;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.footer p {
+	padding-top: 50px;
+}
